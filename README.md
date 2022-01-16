@@ -1,8 +1,8 @@
 >**Remote System Cleaner**
 
 RSC stands for remote system cleaner. It is a micro interactive 
-shell software designed to maintain the file systems of the ser
-vers in the datacenter. It has two versions available as below:
+shell software designed to maintain the file systems of the servers
+in the datacenter. It has two versions available as below:
 
 1) SGD version(RSC_SGD_beta.sh)
 2) PuTTy version(RSC_puTTY_beta.sh)
