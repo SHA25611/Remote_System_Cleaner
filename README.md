@@ -12,30 +12,21 @@ in the datacenter. It has two versions available as below:
 1. SGD version : This shell software is by default compatible with SGD(Secure global desktop) as the display of the shell is integrated 
    with the local computer in the SGD session. Users who are using SGD for operating the script need to just run the script and proceed.
 
-2. PuTTy version : The scripts is also useful for users who prefer using puTTy application for their daily work, the only condition in t
-                   he beta version is that the user should have access to the secure global desktop application also. The puTTy applicat
-                   ion does not integrate the shell display with the local computer, which is a problem considering the utility of this 
-                   script. To overcome this problem, a mix use of puTTy and SGD has been considered here for leveraging the GUI capabili
-                   ties of the linux shell. The process for using the script with puTTy application and SGD mixed is explained below:-
- 
-                  -First open an SGD session, then go to the folder where you have kept the script package, just run the "id.sh" script
-                   and leave the session as it is(you can minimize it). In this process the id.sh script will generate the display vari
-                   able, which will be used to integrate the shell display with local computer through puTTY application.
+2. PuTTy version : The scripts is also useful for users who prefer using puTTy application for their daily work, the only condition in the 
+                   beta version is that the user should have access to the secure global desktop application also. The puTTy application 
+                   does not integrate the shell display with the local computer, which is a problem considering the utility of this 
+                   script. To overcome this problem, a mix use of puTTy and SGD has been considered here for leveraging the GUI capabilities
+                   of the linux shell.
 
-                   
-                  -Then you open a puTTY application and connect to soltau2 thorugh it, go to the same folder where you ran the "id.sh"(
-                   probably the folder containing the script package), it is higly recommended that you keep all the scripts at one plac
-                   e, otherwise the system will not function properly. After reaching the folder run RSC_puTTy_beta.sh and proceed.
+3. id.sh         : It stands for integrate display, it genrates the display varibale for the current SGD session.
 
-3) id.sh         : It stands for integrate display, it genrates the display varibale for the current SGD session.
-
-4) GCS.sh        : It stands for garbage collector script, it is an auxilary script which is used in case the script is terminated abrup
-                   tly by using "ctrl+z". It makes the further functioning of script smooth and error free. make sure to run this script
+4. GCS.sh        : It stands for garbage collector script, it is an auxilary script which is used in case the script is terminated abruptly 
+                   by using "ctrl+z". It makes the further functioning of script smooth and error free. make sure to run this script
                    if in case you have used "ctrl+z" to terminate the script before running the script again.
 
 
-A) About the script architecture :-
-     -The script is a centralized program, it stays on the jump server at a single location and as per demand it logs on to a remote s
+A) About the application architecture :-
+     -This is a centralized program, it stays on the jump server at a single location and as per demand it logs on to a remote s
       erver to fetch realtime data and do the neccesary processing. The functional steps are mentioned below:-
        
        --It takes a server name as input(make sure that you have passwordless access to the server).
